@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>fricknfplatform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Three.js for 3D -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Banner -->
+<header>
+<img src="images/banner.png" class="banner">
+</header>
+
+<!-- Navigation -->
+<nav class="nav">
+<button onclick="goBrowse()">Browse</button>
+<button onclick="goCatalog()">Catalog</button>
+<button onclick="openLogin()">Login</button>
+<button onclick="openSignup()">Sign Up</button>
+</nav>
+
+<div class="layout">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+<h2>Create Account</h2>
+
+<input id="username" placeholder="Username">
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="signup()">Sign Up</button>
+
+<hr>
+
+<h3>Body Customization</h3>
+
+<label>Body Color</label>
+<input type="color" id="bodyColor">
+
+<label>Body Image</label>
+<input type="file">
+
+</aside>
+
+<!-- Main content -->
+<main>
+
+<h2>Featured Games</h2>
+
+<div class="games">
+
+<img src="games/game1.png">
+<img src="games/game2.png">
+<img src="games/game3.png">
+<img src="games/game4.png">
+
+</div>
+
+<h2>3D Web World</h2>
+
+<div id="game3d"></div>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
